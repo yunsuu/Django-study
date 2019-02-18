@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Blog
 
 def home(request):
-    blogs = Blog.objects
-    return render(request,'home.html',{'blogs':blogs})
+    Blogs = Blog.objects
+    return render(request,'home.html',{'blogs':Blogs})
