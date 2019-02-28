@@ -1,0 +1,11 @@
+{%extends 'base.html'%}
+{%block contents%}
+
+<form method="POST">
+    {% csrf_token %}
+    <table>
+    {{commentform.as_table}}
+    </table>
+    <input type="submit">
+</form>
+{%endblock%}
